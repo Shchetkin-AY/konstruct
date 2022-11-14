@@ -1,0 +1,34 @@
+.get-in-touch {
+    height: 500px;
+    background: url("../img/img/bg-footer.png");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // .get-in-touch__title
+
+    &__title {
+        @extend %text-title;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        padding: 0 10% 10% 10%;
+
+        &::after {
+            border: 0;
+        }
+
+        p {
+            margin: 30px;
+            width: 35%;
+        }
+
+    }
+
+    // .get-in-touch__button
+
+    &__button {
+        @extend %button;
+    }
+}

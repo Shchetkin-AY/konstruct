@@ -1,0 +1,53 @@
+// для экстендов - блоки свойств, для одинаковых блоков, статические файлы %
+
+// %extend-example {
+//   display: flex;
+//   color: purple;
+//   border: 1px solid black;
+//   width: 15px;
+// }
+
+%section {
+    padding: 0 10% 5% 10%;
+
+    @media (max-width: 1310px) {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+%text-title {
+    font-family: inherit;
+    color: #48555B;
+    line-height: 23px;
+    text-shadow: 2px 2px 2px #e6e6e6;
+
+    &::after {
+        border: none;
+    }
+
+    @media (max-width: 767px) {
+        line-height: 15px;
+    }
+}
+
+%button {
+    height: 100%;
+    white-space: nowrap;
+    padding: 15px 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00A4E5;
+    box-shadow: 10px 10px 10px #e6e6e6;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
+
+    @media (max-width: 767px) {
+        transform: scale(0.8);
+    }
+
+}

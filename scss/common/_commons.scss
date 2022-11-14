@@ -1,0 +1,37 @@
+// дефолтные настройки можно задавать переменными в veriables
+
+body {
+  width: auto;
+  margin: 0 auto;
+  font-family: $basic-font;
+  min-width: 650px;
+  max-width: 1310px;
+  margin: 0 auto;
+  overflow-x: visible;
+}
+
+.page {
+  margin-top: 10px;
+
+  @media (max-width:1310px) {
+    justify-content: center;
+    align-items: center;
+    max-width: 970px;
+  }
+
+  @media (max-width:992px) {
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+  }
+}
+
+section {
+  @extend %section;
+}

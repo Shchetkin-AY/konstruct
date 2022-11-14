@@ -1,0 +1,24 @@
+@import "common";
+@import "header";
+@import "navigation";
+@import "about";
+@import "service";
+@import "get-in-touch";
+@import "newsletter";
+@import "footer";
+@import "copyright";
+@import "scroll-btn";
+
+
+
+// применение extend-шаблонов блоков
+// div .wrapper {
+//   @extend %extend-example;
+// }
+
+// применение миксина
+
+// .link {
+//   @include example-mixin('100px', #aaa); // подключение миксина с указанием параметров
+//   border-bottom: 5px solid var($color_red); // подключение переменных из файла variables
+// }

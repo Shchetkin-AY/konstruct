@@ -1,0 +1,7 @@
+@import "fonts"; // желательно первым (если есть шрифты из вне)
+@import "reset"; // сброс
+@import "variables"; // переменные
+@import "extends"; // после еременных
+@import "mixins"; // после екстендов тк могут их использовать
+
+@import "commons"; //лучше в самом конце
